@@ -4,6 +4,8 @@ WORKDIR /src
 
 COPY . .
 
+RUN yarn add node cors express
+
 EXPOSE 4000
 
 CMD node server.js
